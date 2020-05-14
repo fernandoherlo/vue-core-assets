@@ -212,6 +212,11 @@
       &.w33 {
         width: 30.333%;
       }
+      &.newbp {
+        margin-right: 0;
+        float: none;
+        clear: both;
+      }
       &.nmt {
         .text-muted {
           display: none;
