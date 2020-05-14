@@ -212,6 +212,11 @@
       &.w33 {
         width: 30.333%;
       }
+      &.nmt {
+        .text-muted {
+          display: none;
+        }
+      }
       .color-pick {
         padding: 0 10px 10px;
       }
