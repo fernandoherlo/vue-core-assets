@@ -169,6 +169,7 @@
       display: none;
     }
     // form-group
+    .custom-file,
     .form-group,
     .block-data {
       position: relative;
@@ -231,6 +232,12 @@
     }
     .custom-select {
       display: block;
+    }
+    .custom-file {
+      margin-top: 20px;
+      .custom-file-label::after {
+        content: 'Buscar';
+      }
     }
     hr.form {
       clear: both;
