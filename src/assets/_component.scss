@@ -235,6 +235,8 @@
     }
     .custom-file {
       margin-top: 20px;
+      margin-bottom: 1rem;
+      height: calc(3.2em + 0.75rem + 2px);
       .custom-file-label::after {
         content: 'Buscar';
       }
