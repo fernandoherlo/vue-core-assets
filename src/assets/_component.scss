@@ -530,6 +530,13 @@
           border-color: lighten($primary, 5%);
         }
       }
+      &.table-drag {
+        tbody {
+          td {
+            cursor: pointer;
+          }
+        }
+      }
       // Actions
       th.actions,
       td.actions {
