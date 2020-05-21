@@ -582,6 +582,7 @@
           }
           &.info {
             @extend .btn-outline-info;
+            cursor: auto;
           }
         }
       }
