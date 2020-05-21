@@ -772,6 +772,7 @@
         li {
           display: inline-block;
           span {
+            cursor: pointer;
             border: 1px solid $gray-300;
             padding: 10px;
             margin: 10px;
