@@ -5,6 +5,9 @@
 |
 */
 .navbar.main {
+  &.wsidebar {
+    left: 16.6666666667%;
+  }
   .navbar-brand {
     font-weight: 900;
     color: $secondary;
@@ -79,14 +82,37 @@
   }
 }
 @include respond-between(xs, md) {
+  body.hideNav {
+    .navbar.fixed-top {
+      & > .navbar-nav.ml-auto {
+        display: none;
+      }
+    }
+  }
   .navbar.main {
+    background: rgba($body-bg, 0.95) !important;
+    padding: 0.7rem 1rem;
+    &.wsidebar {
+      left: 25%;
+    }
     .navbar-brand {
       display: none;
+    }
+    .navbar-collapse {
+      height: 85vh;
+      overflow-y: auto;
+      box-shadow: $box-shadow;
+      &.show,
+      &.collapsing {
+        background: $primary !important;
+      }
+
     }
   }
   .navbar.foot {
     display: flex;
     padding: 0;
+    box-shadow: $box-shadow;
     .navbar-nav {
       flex-direction: row;
       width: 100%;

@@ -94,7 +94,7 @@ main {
   position: absolute;
   width: 200px;
   margin-left: -100px;
-  top: 100px;
+  top: 60px;
   left: 50%;
   text-align: center;
 
@@ -254,9 +254,34 @@ opacity: 0;
 @include respond-between(xs, sm) {
   body {
     font-size: 0.9rem;
-    margin-top: 56px;
+    margin-top: 0;
+    &.dashboard {
+      margin-top: 58px;
+    }
   }
   .content {
-    padding-top: 10px;
+    padding-top: 0;
+  }
+  main {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .btn-toolbar.submenu-core {
+    margin-bottom: 20px !important;
+    .btn-group {
+      flex-direction: column;
+      width: 100%;
+      .btn:first-child {
+        border-top-right-radius: 0.25rem;
+        border-bottom-left-radius: 0;
+      }
+      .btn:not(:first-child) {
+        margin-left: 0;
+      }
+      .btn:last-child {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.25rem;
+      }
+    }
   }
 }

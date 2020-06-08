@@ -856,6 +856,7 @@
   // AQUI
   .List,
   .Edit {
+    padding-top: 10px;
     & > .header {
       float: none;
       h2.hidden-print {
@@ -869,7 +870,7 @@
         margin-bottom: 0;
         z-index: 1030;
         span {
-          margin-top: -2px;
+          // margin-top: -2px;
           margin-left: 3px;
           display: block;
           float: right;
@@ -886,16 +887,36 @@
       .btn {
         padding: 11px 17px 12px;
         &.back {
-          position: fixed;
-          top: 7px;
-          left: 16px;
-          z-index: 1031;
+          // position: fixed;
+          // top: 7px;
+          // left: 16px;
+          // z-index: 1031;
           margin: 0;
           padding: 9px 10px;
-          background-color: $primary;
-          // background: none;
+          // background-color: $primary;
+          background: $body-bg;
           color: $secondary;
           border: 0;
+          float: left;
+        }
+        &.update {
+          // float: right;
+        }
+      }
+      .action-icon {
+        // float: right;
+      }
+      &#popoverContent {
+        position: fixed;
+        top: 7px;
+        // left: 16px;
+        right: 16px;
+        z-index: 1031;
+        .popover-body {
+          padding: 0.5rem 0.7rem;
+        }
+        .single & {
+          left: 16px;
         }
       }
     }
@@ -903,7 +924,7 @@
     // Table
     .vgt-wrap {
       clear: both;
-      padding-top: 12px;
+      padding-top: 0px;
       padding-bottom: 30px;
       // SEARCH
       .vgt-global-search {
@@ -917,7 +938,7 @@
           &.actions {
             width: 135px !important;
             .btn {
-              padding: 12px 17px 14px;
+              padding: 9px 14px 14px;
               margin-bottom: 5px;
             }
           }
@@ -1003,7 +1024,7 @@
       & > .vgt-inner-wrap {
         & > .vgt-responsive,
         & > .vgt-selection-info-row {
-          margin: 0 -15px;
+          // margin: 0 -15px;
         }
       }
     }
