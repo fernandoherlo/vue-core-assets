@@ -47,7 +47,7 @@
   margin-right: 10px;
   cursor: pointer;
   &.open {
-    color: $white;
+    color: $primary;
   }
 }
 
@@ -62,9 +62,6 @@
     display: none !important;
   }
   .navbar.main {
-    &.wsidebar {
-      left: 25%;
-    }
     .navbar-toggler {
       padding: 7px 10px 11px;
       border: 0;
@@ -129,6 +126,21 @@
           }
         }
       }
+    }
+  }
+}
+
+@include respond-between(sm, xl) {
+  .navbar.main {
+    &.wsidebar {
+      left: 25% !important;
+    }
+  }
+}
+@include respond-between(xs, lg) {
+  .navbar.main {
+    &.wsidebar {
+      left: 0% !important;
     }
   }
 }
