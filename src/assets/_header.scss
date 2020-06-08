@@ -62,6 +62,9 @@
     display: none !important;
   }
   .navbar.main {
+    &.wsidebar {
+      left: 25%;
+    }
     .navbar-toggler {
       padding: 7px 10px 11px;
       border: 0;
@@ -92,10 +95,6 @@
   .navbar.main {
     background: rgba($body-bg, 0.95) !important;
     padding: 0.7rem 1rem;
-    
-    &.wsidebar {
-      left: 25%;
-    }
     .navbar-brand {
       display: none;
     }
